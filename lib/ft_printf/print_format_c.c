@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/25 14:38:16 by minhulee          #+#    #+#             */
-/*   Updated: 2023/12/05 14:03:01 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/22 16:50:39 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	print_format_c(char c)
 {
 	if (write(1, &c, 1) < 0)
-		return (ERROR);
-	return (TRUE);
+		return (-1);
+	return (1);
 }

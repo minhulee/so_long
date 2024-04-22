@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/26 08:38:21 by minhulee          #+#    #+#             */
-/*   Updated: 2023/12/05 14:46:01 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/22 16:52:40 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ size_t	next_format(char *f)
 		}
 		i++;
 	}
-	return (ERROR);
+	return (-1);
 }
 
 int	read_fomat(char *f, size_t *n, size_t c, va_list args)
@@ -38,10 +38,10 @@ int	read_fomat(char *f, size_t *n, size_t c, va_list args)
 
 	*n = next_format(f + c);
 	if (*n < 0)
-		return (ERROR);
+		return (-1);
 	count = print_format(f[c + *n - 1], args);
 	if (count < 0)
-		return (ERROR);
+		return (-1);
 	return (count);
 }
 
@@ -60,13 +60,13 @@ int	read_formats(char *f, va_list args)
 		{
 			count = read_fomat(f, &next, cursor, args);
 			if (count < 0)
-				return (ERROR);
+				return (-1);
 			total += count;
 			cursor += next;
 			continue ;
 		}
 		if (print_without_format(f[cursor]) < 0)
-			return (ERROR);
+			return (-1);
 		total++;
 		cursor++;
 	}

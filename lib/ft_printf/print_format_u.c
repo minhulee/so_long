@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/25 14:38:55 by minhulee          #+#    #+#             */
-/*   Updated: 2023/12/05 14:23:59 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/22 16:53:36 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ int	print_format_u(unsigned int n)
 
 	count = 0;
 	if (print_nbr_base(&count, n, DECIMAL, DECIMAL_BASE) < 0)
-		return (ERROR);
+		return (-1);
 	return (count);
 }

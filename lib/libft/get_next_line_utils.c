@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
+/*   By: minhulee <minhulee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 10:47:15 by minhulee          #+#    #+#             */
-/*   Updated: 2024/03/16 04:36:11 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2023/11/23 16:08:44 by minhulee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

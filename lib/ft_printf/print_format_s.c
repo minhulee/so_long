@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/25 14:38:30 by minhulee          #+#    #+#             */
-/*   Updated: 2023/12/05 14:47:23 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/22 16:53:09 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	print_format_s(char *s)
 	while (s[count])
 	{
 		if (write(1, &s[count], 1) < 0)
-			return (ERROR);
+			return (-1);
 		count++;
 	}
 	return (count);

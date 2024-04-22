@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 15:44:47 by minhulee          #+#    #+#             */
-/*   Updated: 2023/12/05 14:08:38 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/22 16:54:10 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ int	print_nbr_base(size_t *count, unsigned long n, int base, char *base_form)
 	while (filter > 0)
 	{
 		if (write(1, &base_form[n / filter], 1) < 0)
-			return (ERROR);
+			return (-1);
 		n %= filter;
 		filter /= base;
 		(*count)++;
 	}
-	return (TRUE);
+	return (1);
 }

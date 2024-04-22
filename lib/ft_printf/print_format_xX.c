@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/25 14:39:25 by minhulee          #+#    #+#             */
-/*   Updated: 2023/12/05 14:34:33 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/22 16:53:41 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ int	print_format_xux(char s, unsigned int x)
 	else
 		base_form = HEXA_U_BASE;
 	if (print_nbr_base(&count, x, HEXA, base_form) < 0)
-		return (ERROR);
+		return (-1);
 	return (count);
 }

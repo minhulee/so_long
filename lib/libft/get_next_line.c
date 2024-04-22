@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
+/*   By: minhulee <minhulee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:53:14 by minhulee          #+#    #+#             */
-/*   Updated: 2024/03/22 14:17:35 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2023/11/23 16:13:39 by minhulee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "get_next_line.h"
+#include <stdio.h>
 
 int	double_backup(char **backup, int len)
 {
