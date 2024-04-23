@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 09:22:55 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/22 17:06:06 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/23 10:37:05 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,8 +69,10 @@ static t_b	load_game(t_s *s, char *path)
 		destroy_game(s);
 		exit_err(err);
 	}
-	if (s->z_num > 50)
+	if (s->z_num > 30)
 		s->z_num = (s->map.w * s->map.h) / s->z_num + 1;
+	else
+		s->z_num = 0;
 	if (load_player(s, &s->player) == FAIL)
 	{
 		destroy_game(s);
