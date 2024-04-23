@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 21:25:57 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/22 16:56:35 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/23 13:04:39 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static t_b	check_dup_zombie(t_zi *zombies, t_zi *zombie, int cur)
 	return (TRUE);
 }
 
-static void	spawn_zombie(t_s *s, t_zi *zombies)
+void	spawn_zombie(t_s *s, t_zi *zombies)
 {
 	int	i;
 

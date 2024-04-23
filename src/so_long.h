@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 12:49:39 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/22 16:37:01 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/23 12:58:27 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ t_b		load_system(t_s *s);
 
 /* Restart func */
 void	init_swirl(t_ss *swirl);
+int		end(t_s *s);
 void	restart(t_s *sys);
 
 /* + Error func */
@@ -133,6 +134,7 @@ t_b		load_player(t_s *s, t_p *p);
 
 /* Zombie func */
 t_b		load_zombie(t_s *s, t_zd *zd);
+void	spawn_zombie(t_s *s, t_zi *zombies);
 
 /* Util func */
 void	sort_zombie_to_y(t_s *s, t_zi *zombies);

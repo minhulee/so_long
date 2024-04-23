@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 09:22:55 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/23 10:36:45 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/23 12:58:30 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ int	main(int ac, char **av)
 	ft_printf("start.\n");
 	mlx_hook(s.win, 2, 0, key_press, &s);
 	mlx_hook(s.win, 3, 0, key_release, &s);
-	mlx_hook(s.win, 17, 0, destroy_game, &s);
+	mlx_hook(s.win, 17, 0, end, &s);
 	mlx_loop_hook(s.mlx, render, &s);
 	mlx_loop(s.mlx);
 	return (TRUE);

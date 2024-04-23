@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 12:27:10 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/22 16:55:51 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/23 13:04:25 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,7 @@ static int	convert_key(int keycode)
 int	key_press(int keycode, t_s *s)
 {
 	if (keycode == 53)
-	{
-		destroy_game(s);
-		ft_printf("Bye bye!");
-		exit(0);
-	}
+		end(s);
 	if (keycode == 15 && (!s->clear || s->print))
 		restart(s);
 	if (keycode == 49 && s->player.target)
@@ -46,7 +42,7 @@ int	key_press(int keycode, t_s *s)
 		s->player.dir = convert_key(keycode);
 	}
 	if (keycode == 257)
-		s->player.sp *= 3;
+		s->player.sp = 12;
 	return (0);
 }
 
@@ -54,8 +50,8 @@ int	key_release(int keycode, t_s *s)
 {
 	if (123 <= keycode && keycode <= 126)
 		s->player.input[convert_key(keycode)] = FALSE;
-	if (keycode == 257)
-		s->player.sp /= 3;
+	if (keycode == 257 && (!s->clear || s->print))
+		s->player.sp = 4;
 	return (0);
 }
 
