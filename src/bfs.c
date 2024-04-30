@@ -6,7 +6,7 @@
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/13 07:47:17 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/22 16:55:42 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/30 13:23:35 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 static void	bfs(t_m *m, t_md **md, int h, int w)
 {
-	if (h == 0 || h == m->h - 1)
+	if (h == 1 || h == m->h - 1)
 		return ;
-	if (w == 0 || w == m->w - 1)
+	if (w == 1 || w == m->w - 1)
 		return ;
 	if (md[h][w].t == W)
 		return ;
@@ -34,7 +34,7 @@ t_b	check_bfs_res(t_m *m, t_md **md)
 	int	h;
 	int	w;
 
-	bfs(m, md, m->start.x, m->start.y);
+	bfs(m, md, m->start.y, m->start.x);
 	h = 1;
 	while (h < m->h - 1)
 	{
