@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   swirl.c                                            :+:      :+:    :+:   */
+/*   swirl_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 10:59:10 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/23 11:11:28 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/23 11:10:35 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "so_long_bonus.h"
 
 static void	cal_swirl_pattern2(t_ss *clear, int w)
 {

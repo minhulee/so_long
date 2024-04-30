@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mload.c                                            :+:      :+:    :+:   */
+/*   mload_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 11:00:49 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/30 10:42:39 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/30 10:45:26 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "so_long_bonus.h"
 
 static int	load_type(t_s *s, char c, int w, int h)
 {

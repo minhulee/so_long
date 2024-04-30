@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombie.c                                           :+:      :+:    :+:   */
+/*   zombie_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 21:25:57 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/23 11:05:08 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/23 11:10:10 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "so_long_bonus.h"
 
 static t_b	check_dup_zombie(t_zi *zombies, t_zi *zombie, int cur)
 {

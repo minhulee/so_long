@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   valid.c                                            :+:      :+:    :+:   */
+/*   valid_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 10:43:01 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/30 10:39:54 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/30 10:45:42 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "so_long_bonus.h"
 
 char	*parse_path(char *path, int num, t_b deps)
 {

@@ -36,7 +36,38 @@ SRCS_MAND		=		./src/main.c		\
 						./src/util.c		\
 						./src/swirl.c		\
 
+SRCS_BONUS			=	./src_bonus/main_bonus.c		\
+						./src_bonus/event_bonus.c		\
+						./src_bonus/render_bonus.c		\
+						./src_bonus/re_end_bonus.c		\
+						./src_bonus/physic_bonus.c		\
+						./src_bonus/update_bonus.c		\
+						./src_bonus/detect_bonus.c		\
+						./src_bonus/collision_bonus.c	\
+						./src_bonus/system_bonus.c		\
+						./src_bonus/destroy_bonus.c		\
+						./src_bonus/map_bonus.c			\
+						./src_bonus/valid_bonus.c		\
+						./src_bonus/mload_bonus.c		\
+						./src_bonus/mdefine_bonus.c		\
+						./src_bonus/bfs_bonus.c			\
+						./src_bonus/mrender_bonus.c		\
+						./src_bonus/player_bonus.c		\
+						./src_bonus/prender_bonus.c		\
+						./src_bonus/zombie_bonus.c		\
+						./src_bonus/zrender_bonus.c		\
+						./src_bonus/sort_bonus.c		\
+						./src_bonus/util_bonus.c		\
+						./src_bonus/swirl_bonus.c
+
 OBJS_MAND		=		$(SRCS_MAND:.c=.o)
+OBJS_BONUS		=		$(SRCS_BONUS:.c=.o)
+
+ifdef FLAG
+    OBJS_FILES	=		$(OBJS_BONUS)
+else
+    OBJS_FILES	=		$(OBJS_MAND)
+endif
 
 NONE='\033[0m'
 GREEN='\033[32m'
@@ -49,7 +80,10 @@ DELETELINE='\033[K;
 
 all : $(NAME)
 
-$(NAME) : $(OBJS_MAND)
+bonus :
+	make all FLAG=1
+
+$(NAME) : $(OBJS_FILES)
 	@echo $(CURSIVE)$(YELLOW) "      - Making $(NAME) Game -" $(NONE)
 	@make -C $(MLX_DIR)
 	@make -C $(LIBFT_DIR)

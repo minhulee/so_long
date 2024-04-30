@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   event.c                                            :+:      :+:    :+:   */
+/*   event_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 12:27:10 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/23 13:13:54 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/23 12:59:47 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "so_long_bonus.h"
 
 static int	convert_key(int keycode)
 {
@@ -50,7 +50,7 @@ int	key_release(int keycode, t_s *s)
 {
 	if (123 <= keycode && keycode <= 126)
 		s->player.input[convert_key(keycode)] = FALSE;
-	if (keycode == 257 && (!s->clear || s->print))
+	if (keycode == 257)
 		s->player.sp = 4;
 	return (0);
 }

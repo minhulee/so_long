@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   map.h                                              :+:      :+:    :+:   */
+/*   map_bonus.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 13:41:22 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/23 15:09:54 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/22 17:05:48 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAP_H
-# define MAP_H
+#ifndef MAP_BONUS_H
+# define MAP_BONUS_H
 
-# include "util.h"
+# include "util_bonus.h"
 
 # define MAP_MAX 5
 # define MAP_PATH "./textures/map/"

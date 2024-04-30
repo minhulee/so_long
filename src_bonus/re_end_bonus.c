@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   re_end.c                                           :+:      :+:    :+:   */
+/*   re_end_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 21:38:29 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/23 12:58:21 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/23 12:59:31 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "so_long_bonus.h"
 
 static void	init_time_frame(t_s *s, t_p *p, t_m *m, t_zi *zi)
 {
@@ -72,9 +72,9 @@ void	restart(t_s *s)
 		s->clear = TRUE;
 	s->print = FALSE;
 	s->player.action = IDLE;
-	s->player.sp = 4;
 	s->player.loc.x = s->map.start.x * 64;
 	s->player.loc.y = s->map.start.y * 64 - 20;
 	s->player.target = NULL;
+	s->player.sp = 4;
 	ft_printf("restart...\nMOVE : %d\n", s->moved);
 }

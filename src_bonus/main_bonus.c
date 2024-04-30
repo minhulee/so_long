@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   main_bonus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: minhulee <minhulee@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 09:22:55 by minhulee          #+#    #+#             */
-/*   Updated: 2024/04/30 10:45:07 by minhulee         ###   ########seoul.kr  */
+/*   Updated: 2024/04/23 12:59:54 by minhulee         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "so_long_bonus.h"
 
 void	free_split(char **s)
 {
@@ -70,7 +70,7 @@ static t_b	load_game(t_s *s, char *path)
 		exit_err(err);
 	}
 	if (s->z_num > 30)
-		s->z_num = s->map.w * s->map.h / s->z_num + 1;
+		s->z_num = (s->map.w * s->map.h) / s->z_num + 1;
 	else
 		s->z_num = 0;
 	if (load_player(s, &s->player) == FAIL)
@@ -78,7 +78,6 @@ static t_b	load_game(t_s *s, char *path)
 		destroy_game(s);
 		exit_err("ERROR\n :: player load failed ::");
 	}
-	ft_printf("load_player\n");
 	return (TRUE);
 }
 
